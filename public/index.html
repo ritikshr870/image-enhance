@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhotoMagic - Ultimate Photo Enhancer</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="fade-in">
+    <h1 class="glow-text">PhotoMagic</h1>
+    <nav>
+      <a href="#" id="logout" class="nav-link">Logout</a>
+      <a href="profile.html" class="nav-link">Profile</a>
+    </nav>
+  </header>
+  <div class="hero-section">
+    <h2 class="hero-title">Transform Your Photos with Magic</h2>
+    <p class="hero-subtitle">AI-Powered Enhancements by Sharma Developer</p>
+    <span class="hero-line"></span>
+  </div>
+  <div class="container">
+    <div class="upload-section fade-in">
+      <h3 class="section-title">Upload & Enhance Your Image <span class="decor-line"></span></h3>
+      <input type="file" id="imageInput" accept="image/*" class="file-input">
+      <div id="previewBefore" class="preview"></div>
+      <div class="enhance-buttons">
+        <button data-type="auto" class="enhance-btn" data-before="/assets/before_auto.jpg" data-after="/assets/after_auto.jpg"><i class="fas fa-magic"></i> Auto Enhance</button>
+        <button data-type="brighten" class="enhance-btn" data-before="/assets/before_bright.jpg" data-after="/assets/after_bright.jpg"><i class="fas fa-sun"></i> Brighten</button>
+        <button data-type="saturate" class="enhance-btn" data-before="/assets/before_sat.jpg" data-after="/assets/after_sat.jpg"><i class="fas fa-palette"></i> Saturate</button>
+        <button data-type="contrast" class="enhance-btn" data-before="/assets/before_con.jpg" data-after="/assets/after_con.jpg"><i class="fas fa-adjust"></i> Contrast</button>
+        <button data-type="denoise" class="enhance-btn" data-before="/assets/before_noise.jpg" data-after="/assets/after_noise.jpg"><i class="fas fa-wave-square"></i> Denoise</button>
+        <button data-type="upscale" class="enhance-btn" data-before="/assets/before_up.jpg" data-after="/assets/after_up.jpg"><i class="fas fa-expand"></i> Upscale</button>
+        <button data-type="grayscale" class="enhance-btn" data-before="/assets/before_gray.jpg" data-after="/assets/after_gray.jpg"><i class="fas fa-eye-slash"></i> Grayscale</button>
+        <button data-type="edge" class="enhance-btn" data-before="/assets/before_edge.jpg" data-after="/assets/after_edge.jpg"><i class="fas fa-border-all"></i> Edge Detect</button>
+        <button data-type="sharpen" class="enhance-btn" data-before="/assets/before_sharp.jpg" data-after="/assets/after_sharp.jpg"><i class="fas fa-star"></i> Sharpen</button>
+        <button data-type="colorize" class="enhance-btn" data-before="/assets/before_color.jpg" data-after="/assets/after_color.jpg"><i class="fas fa-paint-brush"></i> Colorize</button>
+        <button data-type="hdr" class="enhance-btn" data-before="/assets/before_hdr.jpg" data-after="/assets/after_hdr.jpg"><i class="fas fa-camera"></i> HDR</button>
+        <button data-type="vintage" class="enhance-btn" data-before="/assets/before_vintage.jpg" data-after="/assets/after_vintage.jpg"><i class="fas fa-clock"></i> Vintage</button>
+        <button data-type="cartoon" class="enhance-btn" data-before="/assets/before_cartoon.jpg" data-after="/assets/after_cartoon.jpg"><i class="fas fa-paint-roller"></i> Cartoon</button>
+        <button data-type="blur" class="enhance-btn" data-before="/assets/before_blur.jpg" data-after="/assets/after_blur.jpg"><i class="fas fa-cloud"></i> Blur</button>
+        <button data-type="rotate" class="enhance-btn" data-before="/assets/before_rotate.jpg" data-after="/assets/after_rotate.jpg"><i class="fas fa-redo"></i> Rotate</button>
+        <button data-type="crop" class="enhance-btn" data-before="/assets/before_crop.jpg" data-after="/assets/after_crop.jpg"><i class="fas fa-crop"></i> Crop</button>
+        <button data-type="sepia" class="enhance-btn" data-before="/assets/before_sepia.jpg" data-after="/assets/after_sepia.jpg"><i class="fas fa-tint"></i> Sepia</button>
+        <button data-type="invert" class="enhance-btn" data-before="/assets/before_invert.jpg" data-after="/assets/after_invert.jpg"><i class="fas fa-exchange-alt"></i> Invert</button>
+        <button data-type="sketch" class="enhance-btn" data-before="/assets/before_sketch.jpg" data-after="/assets/after_sketch.jpg"><i class="fas fa-pencil-alt"></i> Sketch</button>
+      </div>
+    </div>
+    <div class="edit-section fade-in">
+      <h3 class="section-title">Your Enhanced Masterpiece <span class="decor-line"></span></h3>
+      <div id="imagePreview" class="preview"></div>
+      <div class="control-buttons">
+        <button id="downloadBtn" class="control-btn"><i class="fas fa-download"></i> Download High Quality</button>
+        <button id="saveBtn" class="control-btn"><i class="fas fa-save"></i> Save to History</button>
+      </div>
+    </div>
+    <div class="history-section fade-in">
+      <h3 class="section-title">Enhancement History <span class="decor-line"></span></h3>
+      <button id="cleanHistoryBtn" class="control-btn clean-btn"><i class="fas fa-trash"></i> Clean History</button>
+      <ul id="historyList" class="list-group"></ul>
+    </div>
+  </div>
+  <footer>
+    <p>Developed by <span class="dev-name">Sharma Developer</span></p>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/enhanced.js"></script>
+</body>
+</html>

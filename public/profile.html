@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - PhotoMagic</title>
+  <link rel="stylesheet" href="css/profile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="fade-in">
+    <h1 class="glow-text">PhotoMagic</h1>
+    <nav>
+      <a href="#" id="logout" class="nav-link">Logout</a>
+      <a href="index.html" class="nav-link">Home</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="card fade-in">
+      <h2 class="section-title">Your Profile <span class="decor-line"></span></h2>
+      <p id="usernameDisplay" class="profile-info">Username: </p>
+      <form id="updateProfileForm">
+        <input type="text" id="newUsername" placeholder="New Username" class="control-input">
+        <input type="password" id="newPassword" placeholder="New Password" class="control-input">
+        <button type="submit" class="animated-btn">Update Profile</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>Developed by <span class="dev-name">Sharma Developer</span></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
